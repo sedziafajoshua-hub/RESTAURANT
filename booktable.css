@@ -10,12 +10,11 @@
     box-shadow: var(--shadow-card);
 }
 .booking-visual{
-    
     flex: 1;
     min-width: 300px;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    /* background-color: var(--forest); */
+    background-color: var(--forest);
     background-image: url(image/Contenental/homepage.jpg);
     position: relative;
     padding: 40px;
@@ -51,11 +50,6 @@
     color: var(--gold-light);
     margin-bottom: 4px;
 }
-
-
-#potseclogo{
-width: 40PX;
-}
 .booking-hours span{ font-size: 13.5px; color: rgba(244,238,223,0.9); }
 
 .booking-form-panel{
@@ -87,7 +81,17 @@ width: 40PX;
 
 @media screen and (max-width: 900px){
     .booking-layout{ flex-direction: column; }
+    .booking-visual, .booking-form-panel{ min-width: 0; width: 100%; }
     .booking-visual{ min-height: 220px; }
     .booking-form-panel{ padding: 34px 26px; }
     .field-row{ flex-direction: column; gap: 0; }
+}
+
+@media screen and (max-width: 480px){
+    .booking-section{ padding: 40px 0; }
+    .booking-visual{ min-height: 170px; padding: 26px; }
+    .booking-visual-copy h3{ font-size: 21px; }
+    .booking-hours{ gap: 20px; }
+    .booking-form-panel{ padding: 26px 18px 30px; }
+    .booking-form-panel h1{ font-size: 25px; }
 }

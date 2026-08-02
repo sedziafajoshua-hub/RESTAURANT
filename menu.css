@@ -13,7 +13,7 @@
 }
 /* ---------- group title ---------- */
 .group-title{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
     font-size: 30px;
     margin: 20px 0 26px;
@@ -76,7 +76,7 @@
 .box04{ background-image: url(image/snakcs/top-view-assorted-beer-snacks-as-fried-bread-sticks-with-cheese-french-fries-pistachios-boiled-shrimps-with-sauces-wooden-board.jpg); }
 .box05{ background-image: url(image/snakcs/top-view-assortment-snacks-beer-table.jpg); }
 .box06{ background-image: url(image/snakcs/top-view-delicious-snacks-blue-bowl-dark-background.jpg); }
-.box07{ background-image: url(image/snakcs/top-view-delicious-snacks-blue-bowl-dark-background.jpg); }
+.box07{ background-image: url(image/snakcs/top-view-different-snacks-crackers-nuts-crisps-dark-grey-surface.jpg); }
 .box08{ background-image: url(image/Breakfast/eligible\ rolls.jpg); }
 .box16{ background-image: url(image/Breakfast/breakfast-valentine-s-day-fried-eggs-bread-shape-heart-fresh-vegetables.jpg); }
 .box17{ background-image: url(image/Breakfast/brooke-lark-HlNcigvUi4Q-unsplash.jpg); }
@@ -94,7 +94,7 @@
 .box5{ background-image: url(image/local/490806815_658767033435822_6172667857845574030_n.jpg); }
 .box6{ background-image: url(image/local/Banku\ and\ Okro\ stew\ with.jpg); }
 .box7{ background-image: url(image/local/Beans\ and\ plantains\ 😋.jpg); }
-.box8{ background-image: url(image/Contenental/side-view-meat-stew-lamb-stew-with-fried-onion-dried-fruits-with-rice-plate.jpg); }
+.box8{ background-image: url(image/Contenental/asian-food-restaurant.jpg); }
 .box9{ background-image: url(image/Contenental/fried-chicken-mixed-with-vegetables.jpg); }
 .box10{ background-image: url(image/Contenental/grilled-chicken-steak-vegetables-marble-background.jpg); }
 .box11{ background-image: url(image/Contenental/Noodles\ and\ eggs.jpg); }
@@ -109,4 +109,8 @@
 @media screen and (max-width: 560px){
     .import{ grid-template-columns: 1fr; }
     .dish{ font-size: 32px; }
+}
+@media screen and (max-width: 480px){
+    .menu-hero{ padding: 36px 0 20px; }
+    .group-title{ font-size: 22px; margin: 14px 0 18px; }
 }

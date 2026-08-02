@@ -29,7 +29,7 @@
                 <a class="cart-link" href="order.html" aria-label="View your order">
                     &#128722;<span class="cart-count">0</span>
                 </a>
-                <a class="btn btn-primary" href="Login.html">Login / Signup</a>
+                <a class="btn btn-primary" href="Login.html" id="authBtn">Login / Signup</a>
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
                     <span class="bar"></span><span class="bar"></span><span class="bar"></span>
                 </button>
@@ -120,7 +120,7 @@
                     <div class="confirm-mark">&#10003;</div>
                     <h3>Table Requested</h3>
                     <p id="confirm-text" class="muted"></p>
-                    <a class="btn btn-outline" href="homapage.html">Back to Home</a>
+                    <a class="btn btn-outline" href="index.html">Back to Home</a>
                 </div>
             </div>
 
@@ -135,7 +135,7 @@
             </div>
             <div class="footer-col">
                 <h4>Explore</h4>
-                <a href="homapage.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="menu.html">Food Menu</a>
                 <a href="order.html">Order Online</a>
                 <a href="About.html">About Us</a>
@@ -153,10 +153,11 @@
         </div>
         <div class="fleuron center"><span>&#10087;</span></div>
         <div class="footer-bottom">&copy; 2026 Potsec Catering Foods. All rights reserved.</div>
-        <div class="footer-bottom">&copy;By Joahua Yao Sedziafa</div>
     </footer>
 
     <script src="cart.js"></script>
+    <script src="auth.js"></script>
+    <script src="transitions.js"></script>
     <script>
         var navToggle = document.getElementById('navToggle');
         var mainNav = document.getElementById('main-nav');
