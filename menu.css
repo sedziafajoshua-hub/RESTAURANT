@@ -1,0 +1,112 @@
+/* ---------- menu hero ---------- */
+.menu-hero{
+    background: var(--ivory-2);
+    padding: 48px 0 28px;
+    text-align: center;
+}
+.dish{
+    font-size: 42px;
+}
+.menu-sub{
+    max-width: 480px;
+    margin: 0 auto 26px;
+}
+/* ---------- group title ---------- */
+.group-title{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    margin: 20px 0 26px;
+}
+
+/* ---------- dish grid ---------- */
+.import{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+.import2{
+    background: #fff;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.import2:hover{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card);
+}
+.dish-img{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.card-body{
+    padding: 16px 18px 20px;
+}
+.third{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+.both{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 13.5px;
+}
+.both1{
+    color: var(--clay);
+    font-weight: 700;
+}
+.dot{ color: var(--line); }
+.both2{ color: var(--text-soft); }
+.cart1{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- exact image sources, unchanged from the original menu.css ---------- */
+.box01{ background-image: url(image/snakcs/hotdog-with-ketchup-mustard-lettuce-wooden-table.jpg); }
+.box02{ background-image: url(image/snakcs/junk-food-products-wooden-plates-with-beer-cheese-barbecue-pistachio-top-view.jpg); }
+.box03{ background-image: url(image/snakcs/top-view-assorted-beer-snacks-as-fried-bread-sticks-with-cheese-french-fries-pistachios-boiled-shrimps-with-sauces-wooden-board.jpg); }
+.box04{ background-image: url(image/snakcs/top-view-assorted-beer-snacks-as-fried-bread-sticks-with-cheese-french-fries-pistachios-boiled-shrimps-with-sauces-wooden-board.jpg); }
+.box05{ background-image: url(image/snakcs/top-view-assortment-snacks-beer-table.jpg); }
+.box06{ background-image: url(image/snakcs/top-view-delicious-snacks-blue-bowl-dark-background.jpg); }
+.box07{ background-image: url(image/snakcs/top-view-delicious-snacks-blue-bowl-dark-background.jpg); }
+.box08{ background-image: url(image/Breakfast/eligible\ rolls.jpg); }
+.box16{ background-image: url(image/Breakfast/breakfast-valentine-s-day-fried-eggs-bread-shape-heart-fresh-vegetables.jpg); }
+.box17{ background-image: url(image/Breakfast/brooke-lark-HlNcigvUi4Q-unsplash.jpg); }
+.box18{ background-image: url(image/Breakfast/cup-hot-cappuccino-chocolate-croissant-with-breakfast.jpg); }
+.box19{ background-image: url(image/Breakfast/dani-rendina-SH6vc3VOOwE-unsplash.jpg); }
+.box20{ background-image: url(image/Breakfast/download.jpg); }
+.box21{ background-image: url(image/Breakfast/download\ \(1\).jpg); }
+.box22{ background-image: url(image/Breakfast/randy-fath-SQ20tWzxXO0-unsplash.jpg); }
+.box23{ background-image: url(image/Breakfast/eligible\ rolls.jpg); }
+.box0{ background-image: url(image/local/510721098_685998637588372_3565078419484925668_n.jpg); }
+.box1{ background-image: url(image/local/120452843_2664884723765779_7621240130143351918_n.jpg); }
+.box2{ background-image: url(image/local/480345885_608842705101012_7018463418938982195_n.jpg); }
+.box3{ background-image: url(image/local/481078052_970073631924181_2924427291653178202_n.jpg); }
+.box4{ background-image: url(image/local/486697164_4056445574575226_5249874587119391601_n.jpg); }
+.box5{ background-image: url(image/local/490806815_658767033435822_6172667857845574030_n.jpg); }
+.box6{ background-image: url(image/local/Banku\ and\ Okro\ stew\ with.jpg); }
+.box7{ background-image: url(image/local/Beans\ and\ plantains\ 😋.jpg); }
+.box8{ background-image: url(image/Contenental/side-view-meat-stew-lamb-stew-with-fried-onion-dried-fruits-with-rice-plate.jpg); }
+.box9{ background-image: url(image/Contenental/fried-chicken-mixed-with-vegetables.jpg); }
+.box10{ background-image: url(image/Contenental/grilled-chicken-steak-vegetables-marble-background.jpg); }
+.box11{ background-image: url(image/Contenental/Noodles\ and\ eggs.jpg); }
+.box12{ background-image: url(image/Contenental/potato-patties-topped-with-beef-patties-shoe-strings.jpg); }
+.box13{ background-image: url(image/Contenental/side-view-chicken-kebab-lavash-served-with-fresh-herbs-onion-adjika-sauce.jpg); }
+.box14{ background-image: url(image/Contenental/side-view-meat-stew-lamb-stew-with-fried-onion-dried-fruits-with-rice-plate.jpg); }
+.box15{ background-image: url(image/Contenental/side-view-sac-with-meat-fried-potatoeslavash-table-restaurant.jpg); }
+
+@media screen and (max-width: 1024px){
+    .import{ grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 560px){
+    .import{ grid-template-columns: 1fr; }
+    .dish{ font-size: 32px; }
+}

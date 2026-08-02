@@ -1,0 +1,141 @@
+/* ---------- menu hero ---------- */
+.menu-hero{
+    background: var(--ivory-2);
+    padding: 48px 0 28px;
+    text-align: center;
+}
+.dish{
+    font-size: 42px;
+}
+.menu-sub{
+    max-width: 480px;
+    margin: 0 auto 26px;
+}
+.filters{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+#potseclogo{
+width: 40PX;
+}
+
+
+#potseclogo{
+width: 40PX;
+}
+.pill{
+    display: inline-block;
+    padding: 9px 20px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #fff;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+.pill:hover{ border-color: var(--gold); }
+.pill.is-active{
+    background: var(--forest);
+    border-color: var(--forest);
+    color: var(--text-inverse);
+}
+
+/* ---------- group title ---------- */
+.group-title{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 30px;
+    margin: 20px 0 26px;
+}
+
+/* ---------- dish grid ---------- */
+.import{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+.import2{
+    background: #fff;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.import2:hover{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card);
+}
+.dish-img{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.card-body{
+    padding: 16px 18px 20px;
+}
+.third{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+.both{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 13.5px;
+}
+.both1{
+    color: var(--clay);
+    font-weight: 700;
+}
+.dot{ color: var(--line); }
+.both2{ color: var(--text-soft); }
+.cart{
+    width: 100%;
+    color: var(--forest);
+    border: 1px solid var(--forest);
+    background: transparent;
+    border-radius: 999px;
+    padding: 9px 0;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.cart:hover{
+    background: var(--forest);
+    color: var(--text-inverse);
+}
+
+/* ---------- exact image sources, unchanged from the original menu.css ---------- */
+.box{ background-image: url(image/Nigerian-fried-rice-photo-2-768x1152.jpg); }
+.box0{ background-image: url(image/snakcs/hotdog-with-ketchup-mustard-lettuce-wooden-table.jpg); }
+.box1{ background-image: url(image/snakcs/junk-food-products-wooden-plates-with-beer-cheese-barbecue-pistachio-top-view.jpg); }
+.box2{ background-image: url(image/snakcs/top-view-assorted-beer-snacks-as-fried-bread-sticks-with-cheese-french-fries-pistachios-boiled-shrimps-with-sauces-wooden-board.jpg); }
+.box3{ background-image: url(image/snakcs/top-view-assorted-beer-snacks-as-fried-bread-sticks-with-cheese-french-fries-pistachios-boiled-shrimps-with-sauces-wooden-board.jpg); }
+.box4{ background-image: url(image/snakcs/top-view-assortment-snacks-beer-table.jpg); }
+.box5{ background-image: url(image/snakcs/top-view-delicious-snacks-blue-bowl-dark-background.jpg); }
+.box6{ background-image: url(image/snakcs/top-view-different-snacks-crackers-nuts-crisps-dark-grey-surface.jpg); }
+.box7{ background-image: url(image/Breakfast/eligible\ rolls.jpg); }
+.box8{ background-image: url(image/Contenental/asian-food-restaurant.jpg); }
+.box9{ background-image: url(image/Contenental/fried-chicken-mixed-with-vegetables.jpg); }
+.box10{ background-image: url(image/Contenental/grilled-chicken-steak-vegetables-marble-background.jpg); }
+.box11{ background-image: url(image/Contenental/Noodles\ and\ eggs.jpg); }
+.box12{ background-image: url(image/Contenental/potato-patties-topped-with-beef-patties-shoe-strings.jpg); }
+.box13{ background-image: url(image/Contenental/side-view-chicken-kebab-lavash-served-with-fresh-herbs-onion-adjika-sauce.jpg); }
+.box14{ background-image: url(image/Contenental/side-view-meat-stew-lamb-stew-with-fried-onion-dried-fruits-with-rice-plate.jpg); }
+.box15{ background-image: url(image/Contenental/side-view-sac-with-meat-fried-potatoeslavash-table-restaurant.jpg); }
+
+@media screen and (max-width: 1024px){
+    .import{ grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 560px){
+    .import{ grid-template-columns: 1fr; }
+    .dish{ font-size: 32px; }
+}

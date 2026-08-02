@@ -1,0 +1,152 @@
+.order-hero{
+    background: var(--ivory-2);
+    padding: 48px 0 24px;
+    text-align: center;
+}
+.order-hero h1{ font-size: 40px; }
+.order-sub{
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.group-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 26px;
+    margin: 8px 0 20px;
+}
+
+.order-layout{
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+    align-items: start;
+}
+
+.import{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 36px;
+}
+.import2{
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.dish-img{
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+}
+.card-body{ padding: 16px 18px 20px; }
+.third{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 6px;
+    min-height: 40px;
+}
+.both1{
+    color: var(--clay);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* ---------- order summary sidebar ---------- */
+.order-summary{
+    position: sticky;
+    top: 96px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 26px 24px;
+    box-shadow: var(--shadow-soft);
+}
+.order-summary h3{ font-size: 19px; margin-bottom: 16px; }
+.summary-empty{ font-size: 13.5px; margin-bottom: 10px; }
+.summary-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 14px;
+}
+.summary-list li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--text);
+}
+.summary-row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-soft);
+    padding: 6px 0;
+}
+.summary-total{
+    font-weight: 700;
+    color: var(--text);
+    font-size: 16px;
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+    margin-top: 4px;
+    margin-bottom: 18px;
+}
+.summary-note{
+    text-align: center;
+    font-size: 12.5px;
+    margin: 14px 0 0;
+}
+.summary-note a{ color: var(--clay); font-weight: 600; }
+
+/* ---------- exact image sources, reused unchanged from menu.css ---------- */
+.box01{ background-image: url(image/snakcs/hotdog-with-ketchup-mustard-lettuce-wooden-table.jpg); }
+.box02{ background-image: url(image/snakcs/junk-food-products-wooden-plates-with-beer-cheese-barbecue-pistachio-top-view.jpg); }
+.box03{ background-image: url(image/snakcs/top-view-assorted-beer-snacks-as-fried-bread-sticks-with-cheese-french-fries-pistachios-boiled-shrimps-with-sauces-wooden-board.jpg); }
+.box04{ background-image: url(image/snakcs/top-view-assorted-beer-snacks-as-fried-bread-sticks-with-cheese-french-fries-pistachios-boiled-shrimps-with-sauces-wooden-board.jpg); }
+.box05{ background-image: url(image/snakcs/top-view-assortment-snacks-beer-table.jpg); }
+.box06{ background-image: url(image/snakcs/top-view-delicious-snacks-blue-bowl-dark-background.jpg); }
+.box07{ background-image: url(image/snakcs/top-view-different-snacks-crackers-nuts-crisps-dark-grey-surface.jpg); }
+.box08{ background-image: url(image/Breakfast/eligible\ rolls.jpg); }
+.box16{ background-image: url(image/Breakfast/breakfast-valentine-s-day-fried-eggs-bread-shape-heart-fresh-vegetables.jpg); }
+.box17{ background-image: url(image/Breakfast/brooke-lark-HlNcigvUi4Q-unsplash.jpg); }
+.box18{ background-image: url(image/Breakfast/cup-hot-cappuccino-chocolate-croissant-with-breakfast.jpg); }
+.box19{ background-image: url(image/Breakfast/dani-rendina-SH6vc3VOOwE-unsplash.jpg); }
+.box20{ background-image: url(image/Breakfast/download.jpg); }
+.box21{ background-image: url(image/Breakfast/download\ \(1\).jpg); }
+.box22{ background-image: url(image/Breakfast/randy-fath-SQ20tWzxXO0-unsplash.jpg); }
+.box23{ background-image: url(image/Breakfast/eligible\ rolls.jpg); }
+.box0{ background-image: url(image/local/510721098_685998637588372_3565078419484925668_n.jpg); }
+.box1{ background-image: url(image/local/120452843_2664884723765779_7621240130143351918_n.jpg); }
+.box2{ background-image: url(image/local/480345885_608842705101012_7018463418938982195_n.jpg); }
+.box3{ background-image: url(image/local/481078052_970073631924181_2924427291653178202_n.jpg); }
+.box4{ background-image: url(image/local/486697164_4056445574575226_5249874587119391601_n.jpg); }
+.box5{ background-image: url(image/local/490806815_658767033435822_6172667857845574030_n.jpg); }
+.box6{ background-image: url(image/local/Banku\ and\ Okro\ stew\ with.jpg); }
+.box7{ background-image: url(image/local/Beans\ and\ plantains\ 😋.jpg); }
+.box8{ background-image: url(image/Contenental/asian-food-restaurant.jpg); }
+.box9{ background-image: url(image/Contenental/fried-chicken-mixed-with-vegetables.jpg); }
+.box10{ background-image: url(image/Contenental/grilled-chicken-steak-vegetables-marble-background.jpg); }
+.box11{ background-image: url(image/Contenental/Noodles\ and\ eggs.jpg); }
+.box12{ background-image: url(image/Contenental/potato-patties-topped-with-beef-patties-shoe-strings.jpg); }
+.box13{ background-image: url(image/Contenental/side-view-chicken-kebab-lavash-served-with-fresh-herbs-onion-adjika-sauce.jpg); }
+.box14{ background-image: url(image/Contenental/side-view-meat-stew-lamb-stew-with-fried-onion-dried-fruits-with-rice-plate.jpg); }
+.box15{ background-image: url(image/Contenental/side-view-sac-with-meat-fried-potatoeslavash-table-restaurant.jpg); }
+
+@media screen and (max-width: 960px){
+    .order-layout{ grid-template-columns: 1fr; }
+    .order-summary{ position: static; }
+}
+@media screen and (max-width: 560px){
+    .import{ grid-template-columns: 1fr; }
+}
+@media screen and (max-width: 480px){
+    .order-hero{ padding: 36px 0 18px; }
+    .order-hero h1{ font-size: 30px; }
+    .group-title{ font-size: 22px; }
+    .order-summary{ padding: 20px 18px; }
+}

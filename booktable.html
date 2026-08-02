@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table — Potsec Catering Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="booktable.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <span class="emblem"><span class="emblem-mark"><img src="image/logo/potlogo.png" alt="potlogo" id="potseclogo"></span></span>
+                <span class="brand-name">Potsec Catering Foods<small>Ejisu &middot; Est. Kitchen</small></span>
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Food Menu</a>
+                <a href="order.html">Order</a>
+                <a href="About.html">About</a>
+                <a href="booktable.html" aria-current="page">Book a Table</a>
+            </nav>
+            <div class="header-actions">
+                <a class="btn btn-outline on-dark" href="booktable.html">Book a Table</a>
+                <a class="cart-link" href="order.html" aria-label="View your order">
+                    &#128722;<span class="cart-count">0</span>
+                </a>
+                <a class="btn btn-primary" href="Login.html">Login / Signup</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section booking-section">
+        <div class="wrap booking-layout">
+
+            <div class="booking-visual" aria-hidden="true">
+                <div class="booking-visual-copy">
+                    <span class="eyebrow">Reservations</span>
+                    <h3>Come hungry, leave happy</h3>
+                    <p>Tables are held for 15 minutes past the booked time. For parties of 10 or
+                        more, please call ahead so we can prepare the space.</p>
+                    <div class="booking-hours">
+                        <div><strong>Open</strong><span>6:00am &ndash; 4:00pm, daily</span></div>
+                        <div><strong>Phone</strong><span>024 000 0000</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-form-panel">
+                <span class="eyebrow">Book a Table</span>
+                <h1>Reserve Your Spot</h1>
+                <p class="muted">Fill in your details and we'll confirm your table shortly.</p>
+
+                <form id="booking-form">
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="bt-name">Full Name</label>
+                            <input id="bt-name" type="text" placeholder="Ama Owusu" required>
+                        </div>
+                        <div class="field">
+                            <label for="bt-phone">Phone Number</label>
+                            <input id="bt-phone" type="tel" placeholder="024 000 0000" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="bt-email">Email</label>
+                        <input id="bt-email" type="email" placeholder="example@gmail.com" required>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="bt-date">Date</label>
+                            <input id="bt-date" type="date" required>
+                        </div>
+                        <div class="field">
+                            <label for="bt-time">Time</label>
+                            <input id="bt-time" type="time" required>
+                        </div>
+                        <div class="field">
+                            <label for="bt-guests">Guests</label>
+                            <select id="bt-guests" required>
+                                <option value="">Select</option>
+                                <option>1 Guest</option>
+                                <option>2 Guests</option>
+                                <option>3 Guests</option>
+                                <option>4 Guests</option>
+                                <option>5+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="bt-occasion">Occasion (optional)</label>
+                        <select id="bt-occasion">
+                            <option value="">None in particular</option>
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                            <option>Business Meal</option>
+                            <option>Family Gathering</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="bt-notes">Special Requests</label>
+                        <textarea id="bt-notes" placeholder="Allergies, seating preference, anything else we should know"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary btn-block" type="submit">Confirm Reservation</button>
+                </form>
+
+                <div id="booking-confirm" class="booking-confirm" hidden>
+                    <div class="confirm-mark">&#10003;</div>
+                    <h3>Table Requested</h3>
+                    <p id="confirm-text" class="muted"></p>
+                    <a class="btn btn-outline" href="homapage.html">Back to Home</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-col">
+                <h4>Potsec Catering Foods</h4>
+                <p>Home-style Ghanaian and continental cooking, made fresh daily and delivered with care.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="homapage.html">Home</a>
+                <a href="menu.html">Food Menu</a>
+                <a href="order.html">Order Online</a>
+                <a href="About.html">About Us</a>
+            </div>
+            <div class="footer-col">
+                <h4>Visit</h4>
+                <a href="booktable.html">Book a Table</a>
+                <p>Open daily &middot; 6:00am &ndash; 4:00pm</p>
+            </div>
+            <div class="footer-col">
+                <h4>Account</h4>
+                <a href="Login.html">Login</a>
+                <a href="Signup.html">Create an Account</a>
+            </div>
+        </div>
+        <div class="fleuron center"><span>&#10087;</span></div>
+        <div class="footer-bottom">&copy; 2026 Potsec Catering Foods. All rights reserved.</div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+        var navToggle = document.getElementById('navToggle');
+        var mainNav = document.getElementById('main-nav');
+        if (navToggle) {
+            navToggle.addEventListener('click', function () {
+                var isOpen = mainNav.classList.toggle('open');
+                navToggle.classList.toggle('is-open', isOpen);
+                navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        }
+
+        var form = document.getElementById('booking-form');
+        var confirmBox = document.getElementById('booking-confirm');
+        var confirmText = document.getElementById('confirm-text');
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            var name = document.getElementById('bt-name').value || 'there';
+            var date = document.getElementById('bt-date').value;
+            var time = document.getElementById('bt-time').value;
+            var guests = document.getElementById('bt-guests').value;
+            confirmText.textContent = 'Thanks, ' + name + '. We\'ve noted your request for ' +
+                (guests || 'your party') + (date ? ' on ' + date : '') + (time ? ' at ' + time : '') +
+                '. A confirmation call or message will follow shortly.';
+            form.hidden = true;
+            confirmBox.hidden = false;
+        });
+    </script>
+</body>
+</html>

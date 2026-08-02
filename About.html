@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Potsec Catering Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <span class="emblem"><span class="emblem-mark"><img src="image/logo/potlogo.png" alt="potlogo" id="potseclogo"></span></span>
+                <span class="brand-name">Potsec Catering Foods<small>Ejisu &middot; Est. Kitchen</small></span>
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Food Menu</a>
+                <a href="order.html">Order</a>
+                <a href="About.html" aria-current="page">About</a>
+                <a href="booktable.html">Book a Table</a>
+            </nav>
+            <div class="header-actions">
+                <a class="btn btn-outline on-dark" href="booktable.html">Book a Table</a>
+                <a class="btn btn-primary" href="Login.html">Login / Signup</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="wrap body">
+            <div class="body1" aria-hidden="true"></div>
+            <div class="about-copy">
+                <span class="eyebrow">Our Story</span>
+                <h1 class="topic">What Makes Us Special</h1>
+                <p class="second">At Potsec Catering Foods, every dish is made with care, from the
+                    ingredients we choose to the service we provide. Here's why our guests keep
+                    coming back.</p>
+
+                <div class="quality">
+                    <div class="quality-item">
+                        <img src="image/Abouticons/Screenshot 2026-07-08 202342.png" alt="Home delivery icon" class="icons1">
+                        <div class="icons2">Home Delivery</div>
+                    </div>
+                    <div class="quality-item">
+                        <img src="image/Abouticons/Screenshot 2026-07-08 202416.png" alt="Pre-booking icon" class="icons1">
+                        <div class="icons2">Pre Booking</div>
+                    </div>
+                    <div class="quality-item">
+                        <img src="image/Abouticons/Screenshot 2026-07-08 202541.png" alt="Best quality icon" class="icons1">
+                        <div class="icons2">Best Quality</div>
+                    </div>
+                    <div class="quality-item">
+                        <img src="image/Abouticons/Screenshot 2026-07-08 203025.png" alt="Easy ordering icon" class="icons1">
+                        <div class="icons2">Easy to Order</div>
+                    </div>
+                </div>
+
+                <div class="about-cta">
+                    <a class="btn btn-primary" href="menu.html">See Our Menu</a>
+                    <a class="btn btn-outline" href="booktable.html">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="fleuron center"><span>&#10087;</span></div>
+
+    <section class="section-tight">
+        <div class="wrap">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">10+</div>
+                    <div class="stat-label">Years serving Kumasi</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">20+</div>
+                    <div class="stat-label">Dishes on the menu</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">4.5</div>
+                    <div class="stat-label">Average guest rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">6am&ndash;4pm</div>
+                    <div class="stat-label">Open every day</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-col">
+                <h4>Potsec Catering Foods</h4>
+                <p>Home-style Ghanaian and continental cooking, made fresh daily and delivered with care.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="homapage.html">Home</a>
+                <a href="menu.html">Food Menu</a>
+                <a href="order.html">Order Online</a>
+                <a href="About.html">About Us</a>
+            </div>
+            <div class="footer-col">
+                <h4>Visit</h4>
+                <a href="booktable.html">Book a Table</a>
+                <p>Open daily &middot; 6:00am &ndash; 4:00pm</p>
+            </div>
+            <div class="footer-col">
+                <h4>Account</h4>
+                <a href="Login.html">Login</a>
+                <a href="Signup.html">Create an Account</a>
+            </div>
+        </div>
+        <div class="fleuron center"><span>&#10087;</span></div>
+        <div class="footer-bottom">&copy; 2026 Potsec Catering Foods. All rights reserved.</div>
+    </footer>
+
+    <script>
+        var navToggle = document.getElementById('navToggle');
+        var mainNav = document.getElementById('main-nav');
+        if (navToggle) {
+            navToggle.addEventListener('click', function () {
+                mainNav.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>

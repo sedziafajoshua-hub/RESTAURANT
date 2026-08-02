@@ -1,0 +1,94 @@
+.body{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+.body1{
+    flex: 1;
+    min-width: 320px;
+
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--forest); */
+    /* background-image: url(images/about.png); */
+    background-image: url(image/local/about\ copy4.png);
+    height: 520px;
+    /* box-shadow: var(--shadow-card); */
+}
+.about-copy{
+    flex: 1;
+    min-width: 320px;
+}
+
+
+#potseclogo{
+width: 40PX;
+}
+.topic{
+    font-size: 42px;
+}
+.second{
+    font-size: 16.5px;
+    max-width: 460px;
+}
+
+.quality{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin: 28px 0 30px;
+}
+.quality-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+}
+.icons1{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.icons2{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.about-cta{
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* ---------- stats strip ---------- */
+.stats{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    background: var(--forest);
+    border-radius: var(--radius-lg);
+    padding: 36px 20px;
+}
+.stat-num{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--gold-light);
+}
+.stat-label{
+    font-size: 13px;
+    color: rgba(244,238,223,0.78);
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 860px){
+    .body{ flex-direction: column; }
+    .quality{ grid-template-columns: 1fr; }
+    .stats{ grid-template-columns: repeat(2, 1fr); }
+}

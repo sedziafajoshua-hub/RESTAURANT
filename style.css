@@ -1,0 +1,159 @@
+/* ---------- hero ---------- */
+.hero{
+    background: linear-gradient(180deg, var(--ivory-2) 0%, var(--ivory) 100%);
+    padding: 56px 0 20px;
+}
+.hero-grid{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+.hero-copy{
+    flex: 1;
+    min-width: 320px;
+}
+.topic{
+    font-size: 52px;
+    font-weight: 600;
+}
+.second{
+    font-size: 17px;
+    max-width: 460px;
+}
+.bite{
+    display: flex;
+    gap: 16px;
+    margin: 26px 0 22px;
+    flex-wrap: wrap;
+}
+.open{
+    display: inline-block;
+    color: var(--text-inverse);
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: var(--forest);
+    padding: 8px 18px;
+}
+.body1{
+    flex: 1;
+    min-width: 320px;
+    border-radius: var(--radius-lg);
+    background-size: cover;
+    background-position: center;
+    background-image: url(image/Contenental/lol.png);
+    height: 490px;
+    /* box-shadow: var(--shadow-card); */
+}
+
+/* ---------- promise grid ---------- */
+.section-head{
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 40px;
+}
+.promise-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+.promise-card{
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 26px 20px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.promise-card:hover{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-soft);
+}
+.promise-icon{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    margin: 0 auto 14px;
+}
+.promise-title{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+.promise-card p{
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ---------- dish preview ---------- */
+.preview{
+    background: var(--ivory-2);
+}
+.preview-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.preview-card{
+    background: #fff;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.25s ease;
+}
+.preview-card:hover{ transform: translateY(-6px); }
+.preview-img{
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+.preview-img1{ background-image: url(image/local/510721098_685998637588372_3565078419484925668_n.jpg); }
+.preview-img2{ background-image: url(image/local/480345885_608842705101012_7018463418938982195_n.jpg); }
+.preview-img3{ background-image: url(image/local/486697164_4056445574575226_5249874587119391601_n.jpg); }
+.preview-body{ padding: 18px 20px 22px; }
+.preview-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.preview-price{
+    font-size: 14px;
+    color: var(--clay);
+    font-weight: 600;
+}
+.preview-cta{
+    text-align: center;
+    margin-top: 36px;
+}
+
+/* ---------- CTA band ---------- */
+.cta-band{
+    background: var(--forest);
+    padding: 56px 0;
+}
+
+#potseclogo{
+width: 40PX;
+}
+.cta-band-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.cta-band-inner h2{ margin: 0; max-width: 420px; }
+.cta-band-actions{
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 860px){
+    .promise-grid{ grid-template-columns: repeat(2, 1fr); }
+    .preview-grid{ grid-template-columns: 1fr; }
+    .topic{ font-size: 38px; }
+    .hero-grid{ flex-direction: column; }
+}

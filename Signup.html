@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up — Potsec Catering Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body class="auth-body">
+
+    <a class="back-link" href="index.html"><span class="arrow">&#8592;</span> Back to Potsec Catering Foods</a>
+
+    <div class="auth-shell">
+        <div class="auth-card">
+            <div class="auth-panel">
+                <div class="auth-panel-top">
+                    <img src="image/joshua-tree-icon-line-art-600w-2244024891.jpg" alt="Potsec Catering Foods mark" id="image">
+                    <a href="Login.html">LOGIN</a>
+                </div>
+
+                <span class="auth-eyebrow">Join Potsec</span>
+                <h1>Create your account</h1>
+                <p class="auth-sub">Save your details for faster ordering, table bookings and delivery tracking.</p>
+
+                <form action="index.html">
+                    <div class="field">
+                        <label for="signup-name">Full Name</label>
+                        <input id="signup-name" type="text" placeholder="Ama Owusu" required>
+                    </div>
+                    <div class="field">
+                        <label for="signup-email">Email</label>
+                        <input id="signup-email" type="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="signup-phone">Phone Number</label>
+                        <input id="signup-phone" type="tel" placeholder="024 000 0000">
+                    </div>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="signup-password">Password</label>
+                            <input id="signup-password" type="password" name="password" placeholder="Create a password" required>
+                        </div>
+                        <div class="field">
+                            <label for="signup-confirm">Confirm Password</label>
+                            <input id="signup-confirm" type="password" name="confirm-password" placeholder="Repeat password" required>
+                        </div>
+                    </div>
+                    <input class="btn btn-primary btn-block auth-submit" type="submit" value="Create Account">
+                </form>
+
+                <div class="auth-foot">
+                    Already have an account? <a href="Login.html">Log in</a>
+                </div>
+            </div>
+
+            <div class="auth-visual signup-visual">
+                <div class="auth-visual-copy">
+                    <span class="eyebrow">Potsec Catering Foods</span>
+                    <h3>Your table, your order, your history</h3>
+                    <p>Create an account to book faster and keep track of every order.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

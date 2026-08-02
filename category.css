@@ -1,0 +1,95 @@
+/* =========================================================
+   Shared layout for single-category menu pages.
+   Each category page pairs this with a small page-specific
+   stylesheet that holds only that category's dish-image paths.
+   ========================================================= */
+
+/* ---------- menu hero ---------- */
+.menu-hero{
+    background: var(--ivory-2);
+    padding: 48px 0 28px;
+    text-align: center;
+}
+.dish{
+    font-size: 42px;
+}
+.menu-sub{
+    max-width: 480px;
+    margin: 0 auto 26px;
+}
+
+/* ---------- group title ---------- */
+.group-title{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 30px;
+    margin: 20px 0 26px;
+}
+
+/* ---------- dish grid ---------- */
+.import{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+.import2{
+    background: #fff;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.import2:hover{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card);
+}
+.dish-img{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.card-body{
+    padding: 16px 18px 20px;
+}
+.third{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+.both{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 13.5px;
+}
+.both1{
+    color: var(--clay);
+    font-weight: 700;
+}
+.dot{ color: var(--line); }
+.both2{ color: var(--text-soft); }
+.cart1{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- empty-category note (used when a page has no dishes yet) ---------- */
+.empty-note{
+    text-align: center;
+    background: #fff;
+    border: 1px dashed var(--line);
+    border-radius: var(--radius-md);
+    padding: 40px 24px;
+    color: var(--text-soft);
+}
+
+@media screen and (max-width: 1024px){
+    .import{ grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 560px){
+    .import{ grid-template-columns: 1fr; }
+    .dish{ font-size: 32px; }
+}
